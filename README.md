@@ -174,6 +174,10 @@ LiteClaw/
 └── pyproject.toml
 ```
 
+## 📊 Project Statistics
+
+- **Total Lines of Code:** <!-- LINE_COUNT_START -->8027<!-- LINE_COUNT_END -->
+
 ## ⚠️ Experimental Status & Philosophy
 
 > **IMPORTANT**: LiteClaw is an **experimental mini-AGI research project**, not a production-ready application.
