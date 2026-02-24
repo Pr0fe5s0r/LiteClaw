@@ -155,6 +155,8 @@ After onboarding, your config is stored in:
 
 ## 📂 Project Structure
 
+**Total Lines of Code:** <!-- LINE_COUNT_START -->0<!-- LINE_COUNT_END -->
+
 ```
 LiteClaw/
 ├── src/liteclaw/
