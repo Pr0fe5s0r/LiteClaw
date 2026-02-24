@@ -38,6 +38,9 @@ He provides real-time feedback for every action he takes.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+<!-- LINE_COUNT_START -->
+![Line Count](https://img.shields.io/badge/Lines_of_Code-calculating...-blue)
+<!-- LINE_COUNT_END -->
 
 ## ✨ What can he do?
 
