@@ -691,7 +691,7 @@ def pair_whatsapp(bridge_dir, work_dir, config_data):
                 
                 # Generate unique PIN for ID discovery (only once)
                 import random
-                pin_code = f"{random.randint(100000, 999999)}"
+                pin_code = f"{random.randint(100000000, 999999999)}"
                 
                 # Discovery Mode with PIN
                 console.print("\n[bold yellow]🔍 ID Discovery Mode[/bold yellow]")
@@ -733,7 +733,7 @@ def pair_whatsapp(bridge_dir, work_dir, config_data):
                                 break
                             else:
                                 # Generate new PIN for next capture
-                                pin_code = f"{random.randint(100000, 999999)}"
+                                pin_code = f"{random.randint(100000000, 999999999)}"
                                 console.print(f"\n[bold cyan]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold cyan]")
                                 console.print(f"[bold white]New Verification PIN: [bold green]{pin_code}[/bold green][/bold white]")
                                 console.print(f"[bold cyan]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold cyan]")
@@ -772,7 +772,7 @@ def pair_whatsapp(bridge_dir, work_dir, config_data):
                                 break
                             else:
                                 # Generate new PIN for next capture
-                                pin_code = f"{random.randint(100000, 999999)}"
+                                pin_code = f"{random.randint(100000000, 999999999)}"
                                 console.print(f"\n[bold cyan]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold cyan]")
                                 console.print(f"[bold white]New Verification PIN: [bold green]{pin_code}[/bold green][/bold white]")
                                 console.print(f"[bold cyan]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold cyan]")
@@ -839,7 +839,7 @@ def pair_telegram(bridge_dir, work_dir, config_data):
         bot_username = "unknown_bot"
         discovered_ids = []
         import random
-        pin_code = f"{random.randint(100000, 999999)}"
+        pin_code = f"{random.randint(100000000, 999999999)}"
         
         console.print("\n[bold yellow]🔍 Telegram ID Discovery Mode[/bold yellow]")
         console.print("[dim]Wait for the bot to start...[/dim]")
@@ -872,7 +872,7 @@ def pair_telegram(bridge_dir, work_dir, config_data):
             # Log format: [Telegram:@username] Incoming from chatid: message
             if "[Telegram:@" in line and pin_code:
                 # Regex match
-                # [Telegram:@BotName] Incoming from 123456789: 123456
+                # [Telegram:@BotName] Incoming from 123456789: 123456789
                 match = re.search(r"\[Telegram:@([^\]]+)\] Incoming from ([^:]+):\s*(.+)", line)
                 if match:
                     found_bot = match.group(1)
@@ -894,7 +894,7 @@ def pair_telegram(bridge_dir, work_dir, config_data):
                             if not questionary.confirm("Capture another ID? (New PIN will be generated)", default=False).ask():
                                 break
                             else:
-                                pin_code = f"{random.randint(100000, 999999)}"
+                                pin_code = f"{random.randint(100000000, 999999999)}"
                                 console.print(f"\n[bold cyan]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold cyan]")
                                 console.print(f"[bold white]New Verification PIN: [bold green]{pin_code}[/bold green][/bold white]")
                                 console.print(f"\n[yellow]Send this PIN from another account: [bold green]{pin_code}[/bold green][/yellow]\n")
